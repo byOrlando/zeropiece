@@ -1,0 +1,16 @@
+basePath: /api
+host: 127.0.0.1:8888
+info:
+  contact:
+    email: rakeecao@gmail.com
+    name: API Support
+    url: http://www.shkqg.com/
+  description: This is a sample server celler server.
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  termsOfService: https://server.shkqg.com/
+  title: ONE-Piece
+  version: "1.0"
+paths: {}
+swagger: "2.0"

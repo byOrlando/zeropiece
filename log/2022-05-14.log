@@ -1,0 +1,578 @@
+[peekaboo] 2022/05/14 - 09:12:06	[34minfo[0m	redis connect ping response:	{"pong": "PONG"}
+zeropiece/Initialize.InitRedis
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/cache.go:31
+zeropiece/Initialize.InitCache
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/cache.go:12
+main.init.0
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:25
+runtime.doInit
+	/usr/local/go/src/runtime/proc.go:6222
+runtime.main
+	/usr/local/go/src/runtime/proc.go:233
+[peekaboo] 2022/05/14 - 09:12:06	[34minfo[0m	register table success
+zeropiece/Initialize.DBTableMigrate
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:48
+zeropiece/Initialize.InitMysql
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:35
+zeropiece/Initialize.InitDb
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:15
+main.init.0
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:27
+runtime.doInit
+	/usr/local/go/src/runtime/proc.go:6222
+runtime.main
+	/usr/local/go/src/runtime/proc.go:233
+[peekaboo] 2022/05/14 - 09:12:06	[34minfo[0m	use middleware cors logger recovery
+zeropiece/Initialize.InitRouters
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/router.go:19
+main.main
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:15
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
+[peekaboo] 2022/05/14 - 09:12:06	[34minfo[0m	routers register success
+zeropiece/Initialize.InitRouters
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/router.go:30
+main.main
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:15
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[peekaboo] 2022/05/14 - 09:28:54	[34minfo[0m	redis connect ping response:	{"pong": "PONG"}
+zeropiece/Initialize.InitRedis
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/cache.go:31
+zeropiece/Initialize.InitCache
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/cache.go:12
+main.init.0
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:25
+runtime.doInit
+	/usr/local/go/src/runtime/proc.go:6222
+runtime.main
+	/usr/local/go/src/runtime/proc.go:233
+[peekaboo] 2022/05/14 - 09:28:54	[34minfo[0m	register table success
+zeropiece/Initialize.DBTableMigrate
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:48
+zeropiece/Initialize.InitMysql
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:35
+zeropiece/Initialize.InitDb
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:15
+main.init.0
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:27
+runtime.doInit
+	/usr/local/go/src/runtime/proc.go:6222
+runtime.main
+	/usr/local/go/src/runtime/proc.go:233
+[peekaboo] 2022/05/14 - 09:28:54	[34minfo[0m	use middleware cors logger recovery
+zeropiece/Initialize.InitRouters
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/router.go:19
+main.main
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:15
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
+[peekaboo] 2022/05/14 - 09:28:54	[34minfo[0m	routers register success
+zeropiece/Initialize.InitRouters
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/router.go:30
+main.main
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:15
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
+[peekaboo] 2022/05/14 - 09:31:52	[34minfo[0m	redis connect ping response:	{"pong": "PONG"}
+zeropiece/Initialize.InitRedis
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/cache.go:31
+zeropiece/Initialize.InitCache
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/cache.go:12
+main.init.0
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:25
+runtime.doInit
+	/usr/local/go/src/runtime/proc.go:6222
+runtime.main
+	/usr/local/go/src/runtime/proc.go:233
+[peekaboo] 2022/05/14 - 09:31:52	[34minfo[0m	register table success
+zeropiece/Initialize.DBTableMigrate
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:48
+zeropiece/Initialize.InitMysql
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:35
+zeropiece/Initialize.InitDb
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:15
+main.init.0
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:27
+runtime.doInit
+	/usr/local/go/src/runtime/proc.go:6222
+runtime.main
+	/usr/local/go/src/runtime/proc.go:233
+[peekaboo] 2022/05/14 - 09:31:52	[34minfo[0m	use middleware cors logger recovery
+zeropiece/Initialize.InitRouters
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/router.go:19
+main.main
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:15
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
+[peekaboo] 2022/05/14 - 09:31:52	[34minfo[0m	routers register success
+zeropiece/Initialize.InitRouters
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/router.go:30
+main.main
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:15
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
+[peekaboo] 2022/05/14 - 09:44:35	[34minfo[0m	redis connect ping response:	{"pong": "PONG"}
+zeropiece/Initialize.InitRedis
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/cache.go:31
+zeropiece/Initialize.InitCache
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/cache.go:12
+main.init.0
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:25
+runtime.doInit
+	/usr/local/go/src/runtime/proc.go:6222
+runtime.main
+	/usr/local/go/src/runtime/proc.go:233
+[peekaboo] 2022/05/14 - 09:44:35	[34minfo[0m	register table success
+zeropiece/Initialize.DBTableMigrate
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:48
+zeropiece/Initialize.InitMysql
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:35
+zeropiece/Initialize.InitDb
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:15
+main.init.0
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:27
+runtime.doInit
+	/usr/local/go/src/runtime/proc.go:6222
+runtime.main
+	/usr/local/go/src/runtime/proc.go:233
+[peekaboo] 2022/05/14 - 09:44:35	[34minfo[0m	use middleware cors logger recovery
+zeropiece/Initialize.InitRouters
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/router.go:19
+main.main
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:15
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
+[peekaboo] 2022/05/14 - 09:44:35	[34minfo[0m	routers register success
+zeropiece/Initialize.InitRouters
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/router.go:30
+main.main
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:15
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
+[peekaboo] 2022/05/14 - 09:57:34	[34minfo[0m	redis connect ping response:	{"pong": "PONG"}
+zeropiece/Initialize.InitRedis
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/cache.go:31
+zeropiece/Initialize.InitCache
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/cache.go:12
+main.init.0
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:25
+runtime.doInit
+	/usr/local/go/src/runtime/proc.go:6222
+runtime.main
+	/usr/local/go/src/runtime/proc.go:233
+[peekaboo] 2022/05/14 - 09:57:34	[34minfo[0m	register table success
+zeropiece/Initialize.DBTableMigrate
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:48
+zeropiece/Initialize.InitMysql
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:35
+zeropiece/Initialize.InitDb
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:15
+main.init.0
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:27
+runtime.doInit
+	/usr/local/go/src/runtime/proc.go:6222
+runtime.main
+	/usr/local/go/src/runtime/proc.go:233
+[peekaboo] 2022/05/14 - 09:57:34	[34minfo[0m	use middleware cors logger recovery
+zeropiece/Initialize.InitRouters
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/router.go:19
+main.main
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:15
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
+[peekaboo] 2022/05/14 - 09:57:34	[34minfo[0m	routers register success
+zeropiece/Initialize.InitRouters
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/router.go:30
+main.main
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:15
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
+[peekaboo] 2022/05/14 - 09:58:11	[34minfo[0m	redis connect ping response:	{"pong": "PONG"}
+zeropiece/Initialize.InitRedis
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/cache.go:31
+zeropiece/Initialize.InitCache
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/cache.go:12
+main.init.0
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:25
+runtime.doInit
+	/usr/local/go/src/runtime/proc.go:6222
+runtime.main
+	/usr/local/go/src/runtime/proc.go:233
+[peekaboo] 2022/05/14 - 09:58:11	[34minfo[0m	register table success
+zeropiece/Initialize.DBTableMigrate
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:48
+zeropiece/Initialize.InitMysql
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:35
+zeropiece/Initialize.InitDb
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:15
+main.init.0
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:27
+runtime.doInit
+	/usr/local/go/src/runtime/proc.go:6222
+runtime.main
+	/usr/local/go/src/runtime/proc.go:233
+[peekaboo] 2022/05/14 - 09:58:11	[34minfo[0m	use middleware cors logger recovery
+zeropiece/Initialize.InitRouters
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/router.go:19
+main.main
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:15
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
+[peekaboo] 2022/05/14 - 09:58:11	[34minfo[0m	routers register success
+zeropiece/Initialize.InitRouters
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/router.go:30
+main.main
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:15
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
+[peekaboo] 2022/05/14 - 10:00:38	[34minfo[0m	redis connect ping response:	{"pong": "PONG"}
+zeropiece/Initialize.InitRedis
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/cache.go:31
+zeropiece/Initialize.InitCache
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/cache.go:12
+main.init.0
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:25
+runtime.doInit
+	/usr/local/go/src/runtime/proc.go:6222
+runtime.main
+	/usr/local/go/src/runtime/proc.go:233
+[peekaboo] 2022/05/14 - 10:00:38	[34minfo[0m	register table success
+zeropiece/Initialize.DBTableMigrate
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:48
+zeropiece/Initialize.InitMysql
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:35
+zeropiece/Initialize.InitDb
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:15
+main.init.0
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:27
+runtime.doInit
+	/usr/local/go/src/runtime/proc.go:6222
+runtime.main
+	/usr/local/go/src/runtime/proc.go:233
+[peekaboo] 2022/05/14 - 10:00:38	[34minfo[0m	use middleware cors logger recovery
+zeropiece/Initialize.InitRouters
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/router.go:19
+main.main
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:15
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
+[peekaboo] 2022/05/14 - 10:00:38	[34minfo[0m	routers register success
+zeropiece/Initialize.InitRouters
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/router.go:30
+main.main
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:15
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
+[peekaboo] 2022/05/14 - 10:03:57	[34minfo[0m	redis connect ping response:	{"pong": "PONG"}
+zeropiece/Initialize.InitRedis
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/cache.go:31
+zeropiece/Initialize.InitCache
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/cache.go:12
+main.init.0
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:25
+runtime.doInit
+	/usr/local/go/src/runtime/proc.go:6222
+runtime.main
+	/usr/local/go/src/runtime/proc.go:233
+[peekaboo] 2022/05/14 - 10:03:57	[34minfo[0m	register table success
+zeropiece/Initialize.DBTableMigrate
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:48
+zeropiece/Initialize.InitMysql
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:35
+zeropiece/Initialize.InitDb
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:15
+main.init.0
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:27
+runtime.doInit
+	/usr/local/go/src/runtime/proc.go:6222
+runtime.main
+	/usr/local/go/src/runtime/proc.go:233
+[peekaboo] 2022/05/14 - 10:03:57	[34minfo[0m	use middleware cors logger recovery
+zeropiece/Initialize.InitRouters
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/router.go:19
+main.main
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:15
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
+[peekaboo] 2022/05/14 - 10:03:57	[34minfo[0m	routers register success
+zeropiece/Initialize.InitRouters
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/router.go:30
+main.main
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:15
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
+[peekaboo] 2022/05/14 - 10:05:51	[34minfo[0m	redis connect ping response:	{"pong": "PONG"}
+zeropiece/Initialize.InitRedis
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/cache.go:32
+zeropiece/Initialize.InitCache
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/cache.go:13
+main.init.0
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:25
+runtime.doInit
+	/usr/local/go/src/runtime/proc.go:6222
+runtime.main
+	/usr/local/go/src/runtime/proc.go:233
+[peekaboo] 2022/05/14 - 10:05:51	[34minfo[0m	register table success
+zeropiece/Initialize.DBTableMigrate
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:48
+zeropiece/Initialize.InitMysql
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:35
+zeropiece/Initialize.InitDb
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:15
+main.init.0
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:27
+runtime.doInit
+	/usr/local/go/src/runtime/proc.go:6222
+runtime.main
+	/usr/local/go/src/runtime/proc.go:233
+[peekaboo] 2022/05/14 - 10:05:51	[34minfo[0m	use middleware cors logger recovery
+zeropiece/Initialize.InitRouters
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/router.go:19
+main.main
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:15
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
+[peekaboo] 2022/05/14 - 10:05:51	[34minfo[0m	routers register success
+zeropiece/Initialize.InitRouters
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/router.go:30
+main.main
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:15
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
+[peekaboo] 2022/05/14 - 10:06:19	[34minfo[0m	redis connect ping response:	{"pong": "PONG"}
+zeropiece/Initialize.InitRedis
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/cache.go:31
+zeropiece/Initialize.InitCache
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/cache.go:12
+main.init.0
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:25
+runtime.doInit
+	/usr/local/go/src/runtime/proc.go:6222
+runtime.main
+	/usr/local/go/src/runtime/proc.go:233
+[peekaboo] 2022/05/14 - 10:06:19	[34minfo[0m	register table success
+zeropiece/Initialize.DBTableMigrate
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:48
+zeropiece/Initialize.InitMysql
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:35
+zeropiece/Initialize.InitDb
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:15
+main.init.0
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:27
+runtime.doInit
+	/usr/local/go/src/runtime/proc.go:6222
+runtime.main
+	/usr/local/go/src/runtime/proc.go:233
+[peekaboo] 2022/05/14 - 10:06:19	[34minfo[0m	use middleware cors logger recovery
+zeropiece/Initialize.InitRouters
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/router.go:19
+main.main
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:15
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
+[peekaboo] 2022/05/14 - 10:06:19	[34minfo[0m	routers register success
+zeropiece/Initialize.InitRouters
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/router.go:30
+main.main
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:15
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
+[peekaboo] 2022/05/14 - 10:35:26	[34minfo[0m	redis connect ping response:	{"pong": "PONG"}
+zeropiece/Initialize.InitRedis
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/cache.go:31
+zeropiece/Initialize.InitCache
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/cache.go:12
+main.init.0
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:25
+runtime.doInit
+	/usr/local/go/src/runtime/proc.go:6222
+runtime.main
+	/usr/local/go/src/runtime/proc.go:233
+[peekaboo] 2022/05/14 - 10:35:26	[34minfo[0m	register table success
+zeropiece/Initialize.DBTableMigrate
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:48
+zeropiece/Initialize.InitMysql
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:35
+zeropiece/Initialize.InitDb
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:15
+main.init.0
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:27
+runtime.doInit
+	/usr/local/go/src/runtime/proc.go:6222
+runtime.main
+	/usr/local/go/src/runtime/proc.go:233
+[peekaboo] 2022/05/14 - 10:35:26	[34minfo[0m	use middleware cors logger recovery
+zeropiece/Initialize.InitRouters
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/router.go:21
+main.main
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:15
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
+[peekaboo] 2022/05/14 - 10:35:26	[34minfo[0m	routers register success
+zeropiece/Initialize.InitRouters
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/router.go:32
+main.main
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:15
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
+[peekaboo] 2022/05/14 - 10:41:08	[34minfo[0m	redis connect ping response:	{"pong": "PONG"}
+zeropiece/Initialize.InitRedis
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/cache.go:31
+zeropiece/Initialize.InitCache
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/cache.go:12
+main.init.0
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:25
+runtime.doInit
+	/usr/local/go/src/runtime/proc.go:6222
+runtime.main
+	/usr/local/go/src/runtime/proc.go:233
+[peekaboo] 2022/05/14 - 10:41:08	[34minfo[0m	register table success
+zeropiece/Initialize.DBTableMigrate
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:48
+zeropiece/Initialize.InitMysql
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:35
+zeropiece/Initialize.InitDb
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:15
+main.init.0
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:27
+runtime.doInit
+	/usr/local/go/src/runtime/proc.go:6222
+runtime.main
+	/usr/local/go/src/runtime/proc.go:233
+[peekaboo] 2022/05/14 - 10:41:08	[34minfo[0m	use middleware cors logger recovery
+zeropiece/Initialize.InitRouters
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/router.go:19
+main.main
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:15
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
+[peekaboo] 2022/05/14 - 10:41:08	[34minfo[0m	routers register success
+zeropiece/Initialize.InitRouters
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/router.go:29
+main.main
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:15
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
+[peekaboo] 2022/05/14 - 18:18:53	[34minfo[0m	{"code":200,"message":"success","timestamp":1652523533}
+zeropiece/UtilityMethodsCollection/push.(*PushOption).Push
+	/Users/orlando/GolandProjects/DLXM/zeropiece/UtilityMethodsCollection/push/PUSH.go:45
+zeropiece/UtilityMethodsCollection/douyin.pushNewWorksToIphone
+	/Users/orlando/GolandProjects/DLXM/zeropiece/UtilityMethodsCollection/douyin/getAwame.go:94
+zeropiece/UtilityMethodsCollection/douyin.mainProcessingMethod
+	/Users/orlando/GolandProjects/DLXM/zeropiece/UtilityMethodsCollection/douyin/getAwame.go:111
+[peekaboo] 2022/05/14 - 19:24:18	[34minfo[0m	{"code":200,"message":"success","timestamp":1652527458}
+zeropiece/UtilityMethodsCollection/push.(*PushOption).Push
+	/Users/orlando/GolandProjects/DLXM/zeropiece/UtilityMethodsCollection/push/PUSH.go:45
+zeropiece/UtilityMethodsCollection/douyin.pushNewWorksToIphone
+	/Users/orlando/GolandProjects/DLXM/zeropiece/UtilityMethodsCollection/douyin/getAwame.go:94
+zeropiece/UtilityMethodsCollection/douyin.mainProcessingMethod
+	/Users/orlando/GolandProjects/DLXM/zeropiece/UtilityMethodsCollection/douyin/getAwame.go:111
+[peekaboo] 2022/05/14 - 19:24:18	[34minfo[0m	{"code":200,"message":"success","timestamp":1652527458}
+zeropiece/UtilityMethodsCollection/push.(*PushOption).Push
+	/Users/orlando/GolandProjects/DLXM/zeropiece/UtilityMethodsCollection/push/PUSH.go:45
+zeropiece/UtilityMethodsCollection/douyin.pushNewWorksToIphone
+	/Users/orlando/GolandProjects/DLXM/zeropiece/UtilityMethodsCollection/douyin/getAwame.go:94
+zeropiece/UtilityMethodsCollection/douyin.mainProcessingMethod
+	/Users/orlando/GolandProjects/DLXM/zeropiece/UtilityMethodsCollection/douyin/getAwame.go:111
+[peekaboo] 2022/05/14 - 19:25:42	[34minfo[0m	{"code":200,"message":"success","timestamp":1652527543}
+zeropiece/UtilityMethodsCollection/push.(*PushOption).Push
+	/Users/orlando/GolandProjects/DLXM/zeropiece/UtilityMethodsCollection/push/PUSH.go:45
+zeropiece/UtilityMethodsCollection/douyin.pushNewWorksToIphone
+	/Users/orlando/GolandProjects/DLXM/zeropiece/UtilityMethodsCollection/douyin/getAwame.go:94
+zeropiece/UtilityMethodsCollection/douyin.mainProcessingMethod
+	/Users/orlando/GolandProjects/DLXM/zeropiece/UtilityMethodsCollection/douyin/getAwame.go:111
+[peekaboo] 2022/05/14 - 19:38:09	[34minfo[0m	redis connect ping response:	{"pong": "PONG"}
+zeropiece/Initialize.InitRedis
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/cache.go:31
+zeropiece/Initialize.InitCache
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/cache.go:12
+main.init.0
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:25
+runtime.doInit
+	/usr/local/go/src/runtime/proc.go:6222
+runtime.main
+	/usr/local/go/src/runtime/proc.go:233
+[peekaboo] 2022/05/14 - 19:38:09	[34minfo[0m	register table success
+zeropiece/Initialize.DBTableMigrate
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:48
+zeropiece/Initialize.InitMysql
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:35
+zeropiece/Initialize.InitDb
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:15
+main.init.0
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:27
+runtime.doInit
+	/usr/local/go/src/runtime/proc.go:6222
+runtime.main
+	/usr/local/go/src/runtime/proc.go:233
+[peekaboo] 2022/05/14 - 19:38:09	[34minfo[0m	use middleware cors logger recovery
+zeropiece/Initialize.InitRouters
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/router.go:19
+main.main
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:15
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
+[peekaboo] 2022/05/14 - 19:38:09	[34minfo[0m	routers register success
+zeropiece/Initialize.InitRouters
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/router.go:29
+main.main
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:15
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
+[peekaboo] 2022/05/14 - 19:38:42	[34minfo[0m	redis connect ping response:	{"pong": "PONG"}
+zeropiece/Initialize.InitRedis
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/cache.go:31
+zeropiece/Initialize.InitCache
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/cache.go:12
+main.init.0
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:25
+runtime.doInit
+	/usr/local/go/src/runtime/proc.go:6222
+runtime.main
+	/usr/local/go/src/runtime/proc.go:233
+[peekaboo] 2022/05/14 - 19:38:42	[34minfo[0m	register table success
+zeropiece/Initialize.DBTableMigrate
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:48
+zeropiece/Initialize.InitMysql
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:35
+zeropiece/Initialize.InitDb
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/db.go:15
+main.init.0
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:27
+runtime.doInit
+	/usr/local/go/src/runtime/proc.go:6222
+runtime.main
+	/usr/local/go/src/runtime/proc.go:233
+[peekaboo] 2022/05/14 - 19:38:42	[34minfo[0m	use middleware cors logger recovery
+zeropiece/Initialize.InitRouters
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/router.go:19
+main.main
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:15
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
+[peekaboo] 2022/05/14 - 19:38:42	[34minfo[0m	routers register success
+zeropiece/Initialize.InitRouters
+	/Users/orlando/GolandProjects/DLXM/zeropiece/Initialize/router.go:29
+main.main
+	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:15
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
