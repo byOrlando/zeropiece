@@ -91,3 +91,5 @@ fabric.properties
 conf/config.yaml
 
 zeropiece
+
+log
