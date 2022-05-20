@@ -8,9 +8,6 @@ import (
 	"sync"
 )
 
-// 映射关系表
-var ClientMap = make(map[string]*Connection, 1000)
-
 //读写锁
 var rwlocker sync.RWMutex
 
@@ -43,7 +40,7 @@ func WsHandler(c *gin.Context) {
 		goto ERR
 	}
 	rwlocker.Lock()
-	ClientMap[userName] = conn
+	ClientMapHandler[userName].Set(conn, userName)
 	rwlocker.Unlock()
 	for {
 		if _, data, err = conn.WsConn.ReadMessage(); err != nil {
@@ -56,7 +53,7 @@ ERR:
 	conn.Close()
 	//删除映射
 	rwlocker.Lock()
-	delete(ClientMap, userName)
+	ClientMapHandler[userName].Remove(conn)
 	rwlocker.Unlock()
 
 }

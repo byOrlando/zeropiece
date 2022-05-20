@@ -18,15 +18,6 @@ type DouYinUserOutList struct {
 	CreateTime string `json:"createTime"`
 }
 
-// @Summary 测试SayHello
-// @Description 向你说Hello
-// @Tags 测试
-// @Accept json
-// @Param who query string true "hehe"
-// @Success 200 {string} string "{"msg": "hello Razeen"}"
-// @Failure 400 {string} string "{"msg": "who are you"}"
-// @Router /GetUserList [get]
-
 func GetUserList(c *gin.Context) {
 	var users []dao.DouyinUser
 	var outList []DouYinUserOutList

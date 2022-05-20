@@ -7,7 +7,6 @@ import (
 	"time"
 	"zeropiece/UtilityMethodsCollection/push"
 	"zeropiece/UtilityMethodsCollection/requests"
-	"zeropiece/UtilityMethodsCollection/wsocket"
 	"zeropiece/common"
 	"zeropiece/dao"
 )
@@ -29,7 +28,7 @@ func requestNetworkData(uid string, name string) gjson.Result {
 	str, err := p1.Get()
 	if err != nil {
 		fmt.Println("获取Awame失败", err)
-		wsocket.CycleToSendError(fmt.Sprintf("获取【%s】数据失败:%s", name, err))
+		WSError(fmt.Sprintf("获取【%s】数据失败:%s", name, err), err)
 		// Error retry
 		str, err = p1.Get()
 	}
@@ -57,7 +56,7 @@ func getAllOldData(uid string) (worksIdList []interface{}) {
 	worksIdList, err = works.FindWorksIdList()
 	if err != nil {
 		fmt.Println("获取数据库数据失败")
-		wsocket.CycleToSendError("获取数据库数据失败")
+		WSError("获取数据库数据失败", err)
 	}
 	return
 }
@@ -80,7 +79,7 @@ func saveAllNewData(works []dao.DouyinWorks) {
 		err := v.Create()
 		if err != nil {
 			fmt.Println("创建失败")
-			wsocket.CycleToSendError("创建失败")
+			WSError("创建失败", err)
 			break
 		}
 	}
@@ -96,7 +95,7 @@ func pushNewWorksToIphone(works []dao.DouyinWorks) {
 			option.AwameID = v.WorkID
 			option.Title = v.Name
 			option.Push()
-			wsocket.CycleToSendSuccess("发现新作品")
+			WSSuccess("发现新作品", nil)
 		}
 	}
 }
@@ -110,9 +109,6 @@ func mainProcessingMethod(uid string, name string) {
 	worksIdList := getAllOldData(uid)
 	// Returns new work data
 	newWorks := checkDataRepeat(works, worksIdList)
-	if len(newWorks) == 0 {
-		wsocket.CycleToSendSuccess(fmt.Sprintf("【%s】没有发布新作品", name))
-	}
 	// Save new work data
 	saveAllNewData(newWorks)
 	// Push data of new works
@@ -130,7 +126,7 @@ func CheckAllUsersWorkCycle() {
 		UserIdList, err := user.FindAllUserIdList()
 		if err != nil {
 			common.LOG.Error("获取用户id列表失败")
-			wsocket.CycleToSendError("获取用户id列表失败")
+			WSError("获取用户id列表失败", err)
 		}
 		for _, UserData := range UserIdList {
 			waitGroup.Add(1)
@@ -139,8 +135,9 @@ func CheckAllUsersWorkCycle() {
 
 		waitGroup.Wait()
 		NewWorkInspections += 1
-		wsocket.CycleToSendSuccess(fmt.Sprintf("正在执行第-%d-次检查", NewWorkInspections))
-		time.Sleep(time.Second * 10)
+		WSSuccess(fmt.Sprintf("正在执行第-%d-次检查", NewWorkInspections), nil)
+		time.Sleep(time.Second * 3)
+
 	}
 
 }

@@ -3266,3 +3266,6 @@ main.main
 	/Users/orlando/GolandProjects/DLXM/zeropiece/main.go:32
 runtime.main
 	/usr/local/go/src/runtime/proc.go:250
+[peekaboo] 2022/05/18 - 19:14:50	[31merror[0m	获取用户id列表失败
+zeropiece/UtilityMethodsCollection/douyin.CheckAllUsersWorkCycle
+	/Users/orlando/GolandProjects/DLXM/zeropiece/UtilityMethodsCollection/douyin/getAwame.go:132

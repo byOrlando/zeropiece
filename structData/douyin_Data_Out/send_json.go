@@ -1,6 +1,6 @@
 package douyin_Data_Out
 
-type DouyinOutData struct {
+type DouYinOutData struct {
 	Code     string      `json:"code"`
 	Msg      string      `json:"msg"`
 	DataType string      `json:"dataType"`
