@@ -28,7 +28,7 @@ func (conn *Connection) WriteMessageHandler(data interface{}) {
 	conn.errorHandler(err)
 	conn.OutChan <- jsonDataByte
 }
-
+     
 func (conn *Connection) errorHandler(err error) {
 	if err != nil {
 		jsonData := JsonDataOut{Code: "201", Msg: "数据不正确", Value: nil}

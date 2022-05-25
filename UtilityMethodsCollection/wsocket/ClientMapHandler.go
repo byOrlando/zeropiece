@@ -1,56 +1,33 @@
 package wsocket
 
-type ClientMapHandlers struct {
-	Name          string
-	ClientMap     *Connection
-	ClientMapList []*Connection
-}
-
-func (c *ClientMapHandlers) Set(control *Connection, name string) {
-	if c.ClientMap == nil && c.ClientMapList == nil {
-		c.ClientMap = control
-		c.Name = name
-
+func WSSET(name string, conn *Connection) {
+	if ClientMapHandler[name] == nil {
+		ClientMapHandler[name] = []*Connection{
+			conn,
+		}
 	} else {
-		if c.ClientMapList == nil {
-			c.ClientMapList = []*Connection{
-				c.ClientMap,
-				control,
-			}
-			c.ClientMap = nil
-		} else {
-			c.ClientMapList = append(c.ClientMapList, control)
-		}
-
+		ClientMapHandler[name] = append(ClientMapHandler[name], conn)
 	}
 }
-func (c *ClientMapHandlers) Write(message string) {
-	if c.ClientMap != nil {
-		c.ClientMap.OutChan <- []byte(message)
+func DELWS(name string, conn *Connection) {
+	if ClientMapHandler[name] == nil {
+		return
 	}
-	if c.ClientMapList != nil {
-		for _, v := range c.ClientMapList {
-			v.OutChan <- []byte(message)
+	for i, v := range ClientMapHandler[name] {
+		if v == conn {
+			ClientMapHandler[name] = append(ClientMapHandler[name][:i], ClientMapHandler[name][i+1:]...)
+			return
 		}
 	}
 }
-
-func (c *ClientMapHandlers) Remove(control *Connection) {
-	if c.ClientMap == control {
-		c.ClientMap = nil
+func WSSend(name string, data []byte) {
+	if ClientMapHandler[name] == nil {
+		return
 	}
-	if c.ClientMapList != nil {
-		for i, v := range c.ClientMapList {
-			if v == control {
-				c.ClientMapList = append(c.ClientMapList[:i], c.ClientMapList[i+1:]...)
-				break
-			}
-		}
-	}
-	if c.ClientMapList == nil && c.ClientMap == nil {
-		delete(ClientMapHandler, c.Name)
+	for _, v := range ClientMapHandler[name] {
+		v.OutChan <- data
 	}
 }
 
 // ClientMapHandler 映射关系表
-var ClientMapHandler = make(map[string]*ClientMapHandlers)
+var ClientMapHandler = make(map[string][]*Connection)

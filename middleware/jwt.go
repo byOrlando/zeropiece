@@ -1,6 +1,7 @@
 package middleware
 
 import (
+	"encoding/base64"
 	"errors"
 	"fmt"
 	"github.com/dgrijalva/jwt-go"
@@ -15,7 +16,8 @@ import (
 // JWTAuth 中间件，检查token
 func JWTAuth() gin.HandlerFunc {
 	return func(c *gin.Context) {
-		token := c.Request.Header.Get("Authorization")
+		token := Decrypt(c.Request.Header.Get("Authorization"))
+
 		if token == "" {
 			ResponseFail(c, 401, "请求未携带token，无权限访问")
 			c.Abort()
@@ -131,7 +133,7 @@ func GenerateToken(userClaims *structData.Claims) (token string, msg string, ok 
 	} else {
 		bearer := "Bearer "
 		token = fmt.Sprintf("%s%s", bearer, token)
-		return token, "登录成功", true
+		return Encrypt(token), "登录成功", true
 	}
 }
 
@@ -141,4 +143,15 @@ func GetClaims(c *gin.Context) *structData.Claims {
 		return &structData.Claims{}
 	}
 	return claims.(*structData.Claims)
+}
+
+func Encrypt(message string) (STR string) {
+	return base64.StdEncoding.EncodeToString([]byte(message))
+}
+func Decrypt(message string) (STR string) {
+	strByte, err := base64.StdEncoding.DecodeString(message)
+	if err != nil {
+		fmt.Println(err)
+	}
+	return string(strByte)
 }

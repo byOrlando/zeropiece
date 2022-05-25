@@ -22,6 +22,7 @@ func WsHandler(c *gin.Context) {
 	)
 	userName := c.Query("id")
 	fmt.Println("userName:", userName)
+	fmt.Println(c.Request.Header.Get("Sec-WebSocket-Protocol"))
 
 	if userName == "" {
 		c.Abort()
@@ -31,6 +32,7 @@ func WsHandler(c *gin.Context) {
 		CheckOrigin: func(r *http.Request) bool {
 			return true
 		},
+		Subprotocols: []string{c.Request.Header.Get("Sec-WebSocket-Protocol")},
 	}).Upgrade(c.Writer, c.Request, nil); err != nil {
 		return
 	}
@@ -40,7 +42,7 @@ func WsHandler(c *gin.Context) {
 		goto ERR
 	}
 	rwlocker.Lock()
-	ClientMapHandler[userName].Set(conn, userName)
+	WSSET(userName, conn)
 	rwlocker.Unlock()
 	for {
 		if _, data, err = conn.WsConn.ReadMessage(); err != nil {
@@ -53,7 +55,7 @@ ERR:
 	conn.Close()
 	//删除映射
 	rwlocker.Lock()
-	ClientMapHandler[userName].Remove(conn)
+	DELWS(userName, conn)
 	rwlocker.Unlock()
 
 }

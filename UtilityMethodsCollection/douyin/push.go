@@ -16,7 +16,8 @@ func WSError(msg string, value interface{}) {
 			DataType: "error",
 			Value:    value,
 		})
-		ws.Write(string(JsonData))
+
+		wsocket.WSSend("DouYin", JsonData)
 	}
 
 }
@@ -31,7 +32,7 @@ func WSSuccess(msg string, value interface{}) {
 			DataType: "ok",
 			Value:    value,
 		})
-		ws.Write(string(JsonData))
+		wsocket.WSSend("DouYin", JsonData)
 	}
 
 }
