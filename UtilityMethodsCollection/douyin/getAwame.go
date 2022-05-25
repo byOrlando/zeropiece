@@ -102,6 +102,7 @@ func pushNewWorksToIphone(works []dao.DouyinWorks) {
 
 // MainProcessingMethod Main processing method
 func mainProcessingMethod(uid string, name string) {
+	defer common.Error()()
 	// Get new work information list data
 	data := requestNetworkData(uid, name)
 	works := dataCleaning(data, uid)
@@ -121,6 +122,7 @@ var NewWorkInspections = 0
 
 // CheckAllUsersWorkCycle The entrance of the program
 func CheckAllUsersWorkCycle() {
+	defer common.Error()()
 	for {
 		user := dao.DouyinUser{}
 		UserIdList, err := user.FindAllUserIdList()

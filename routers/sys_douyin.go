@@ -2,7 +2,7 @@ package routers
 
 import (
 	"github.com/gin-gonic/gin"
-	"zeropiece/app/app_douyin"
+	"zeropiece/controller/app_douyin"
 	"zeropiece/middleware"
 )
 
