@@ -7,7 +7,12 @@ type Config struct {
 	Jwt      JWT      `mapstructure:"jwt" json:"jwt" yaml:"jwt"`
 	Redis    Redis    `mapstructure:"redis" json:"redis" yaml:"redis"`
 	Push     Push     `mapstructure:"push" json:"push" yaml:"push"`
+	Project  Project  `mapstructure:"project" json:"project" yaml:"project"`
 	BaiduMap BaiduMap `mapstructure:"baidumap" json:"baidumap" yaml:"baidumap"`
+}
+
+type Project struct {
+	Mode string `mapstructure:"mode" json:"mode" yaml:"mode"`
 }
 
 type Push struct {

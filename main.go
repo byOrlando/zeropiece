@@ -2,12 +2,11 @@ package main
 
 import (
 	"zeropiece/Initialize"
-	"zeropiece/UtilityMethodsCollection/douyin"
 	"zeropiece/common"
 )
 
 func main() {
-	go douyin.CheckAllUsersWorkCycle()
+	//go douyin.CheckAllUsersWorkCycle()
 	defer common.CACHE.Close()
 	defer common.DB.Close()
 

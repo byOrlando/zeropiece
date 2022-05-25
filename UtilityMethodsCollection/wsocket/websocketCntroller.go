@@ -13,7 +13,6 @@ var rwlocker sync.RWMutex
 
 // WsHandler ws链接处理
 func WsHandler(c *gin.Context) {
-	fmt.Println("有新的链接")
 	var (
 		wsConn *websocket.Conn
 		err    error
@@ -21,8 +20,7 @@ func WsHandler(c *gin.Context) {
 		data   []byte
 	)
 	userName := c.Query("id")
-	fmt.Println("userName:", userName)
-	fmt.Println(c.Request.Header.Get("Sec-WebSocket-Protocol"))
+	fmt.Println("有新的链接--userName:", userName)
 
 	if userName == "" {
 		c.Abort()

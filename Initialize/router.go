@@ -12,7 +12,7 @@ import (
 )
 
 func InitRouters() (Router *gin.Engine) {
-	gin.SetMode(gin.DebugMode)
+	gin.SetMode(common.CONFIG.Project.Mode)
 	Router = gin.Default()
 
 	Router.Use(middleware.Cors())
