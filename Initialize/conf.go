@@ -7,6 +7,7 @@ import (
 	"github.com/spf13/viper"
 	"os"
 	"zeropiece/common"
+	"zeropiece/conf"
 )
 
 func InitConf(path ...string) {
@@ -17,7 +18,7 @@ func InitConf(path ...string) {
 		flag.Parse()
 		if config == "" { // 优先级: 命令行 > 环境变量 > 默认值
 			if configEnv := os.Getenv("CONFFILE"); configEnv == "" {
-				config = common.ConfigFile
+				config = conf.ConfigFile
 				fmt.Printf("您正在使用config的默认值,config的路径为%v\n", config)
 			} else {
 				config = configEnv

@@ -36,5 +36,5 @@ func Login(c *gin.Context) {
 
 func LogOut(c *gin.Context) {
 	// 退出逻辑
-	middleware.ResponseSucc(c, "退出成功", nil)
+	middleware.ResponseFail(c, 401, "退出成功")
 }

@@ -7,7 +7,9 @@ import (
 	"github.com/dgrijalva/jwt-go"
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
+	"regexp"
 	"strconv"
+	"strings"
 	"time"
 	"zeropiece/common"
 	"zeropiece/structData"
@@ -146,9 +148,19 @@ func GetClaims(c *gin.Context) *structData.Claims {
 }
 
 func Encrypt(message string) (STR string) {
-	return base64.StdEncoding.EncodeToString([]byte(message))
+	// 处理Base64编码里的等号
+	data := base64.StdEncoding.EncodeToString([]byte(message))
+	re := regexp.MustCompile(`=+$`)
+	return re.ReplaceAllString(data, "")
 }
+
 func Decrypt(message string) (STR string) {
+	// 因为字符串必须是4的倍数 所以用等号补位
+	num := len(message) % 4
+	if num != 0 {
+		num = 4 - len(message)%4
+	}
+	message = message + strings.Repeat("=", num)
 	strByte, err := base64.StdEncoding.DecodeString(message)
 	if err != nil {
 		fmt.Println(err)

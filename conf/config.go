@@ -1,5 +1,10 @@
 package conf
 
+const (
+	ConfigFile   = "conf/config.yaml"
+	PassWordSalt = "DLXM"
+)
+
 type Config struct {
 	Log      Log      `mapstructure:"log" json:"log" yaml:"log"`
 	Mysql    Mysql    `mapstructure:"mysql" json:"mysql" yaml:"mysql"`
@@ -13,6 +18,7 @@ type Config struct {
 
 type Project struct {
 	Mode string `mapstructure:"mode" json:"mode" yaml:"mode"`
+	Name string `mapstructure:"name" json:"name" yaml:"name"`
 }
 
 type Push struct {

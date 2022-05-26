@@ -3,12 +3,13 @@ package service
 import (
 	"zeropiece/common"
 	"zeropiece/common/utils"
+	"zeropiece/conf"
 	"zeropiece/dao"
 )
 
 // LoginCheck 登录验证
 func LoginCheck(username string, password string) (user *dao.PeekabooUser, msg string, isPass bool) {
-	password = utils.Md5(password + common.PWsalt)
+	password = utils.Md5(password + conf.PassWordSalt)
 	//fmt.Println(password)
 	user, ok := CheckUserExist(username, password)
 

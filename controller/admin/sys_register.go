@@ -5,6 +5,7 @@ import (
 	"time"
 	"zeropiece/common"
 	"zeropiece/common/utils"
+	"zeropiece/conf"
 	"zeropiece/dao"
 	"zeropiece/middleware"
 	"zeropiece/structData"
@@ -33,7 +34,7 @@ func Register(c *gin.Context) {
 	user := dao.PeekabooUser{
 		UserName:  params.Account,
 		Nickname:  params.Account,
-		Password:  utils.Md5(params.Password + common.PWsalt),
+		Password:  utils.Md5(params.Password + conf.PassWordSalt),
 		AvatarUrl: "",
 		RoleId:    56,
 		Status:    1,

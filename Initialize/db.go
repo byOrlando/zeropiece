@@ -40,10 +40,7 @@ func InitMysql() {
 func DBTableMigrate(db *gorm.DB) {
 	//db.Set("gorm:table_options","ENGINE=InnoDB").CreateTable(&User{})
 	db.Set("gorm:table_options", "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4").AutoMigrate(
-		&dao.PeekabooUser{},
-		&dao.Role{},
-		&dao.DouyinUser{},
-		&dao.DouyinWorks{},
+		dao.RegistrationModel()...,
 	)
 	common.LOG.Info("register table success")
 }
