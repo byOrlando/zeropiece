@@ -3,6 +3,7 @@ package server
 import (
 	"go.uber.org/zap"
 	initialize "zeropiece/Initialize"
+	"zeropiece/UtilityMethodsCollection/push"
 	"zeropiece/UtilityMethodsCollection/tasks"
 	"zeropiece/common"
 )
@@ -10,6 +11,7 @@ import (
 func Run() {
 	defer common.CACHE.Close()
 	defer common.DB.Close()
+	defer push.SystemPush("服务器发生故障")
 	// 启动轮训任务
 	go tasks.Run()
 	// 初始化路由

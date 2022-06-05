@@ -8,6 +8,7 @@ func RegistrationModel() []interface{} {
 		&DouyinUser{},
 		&DouyinWorks{},
 		&CityCode{},
+		&InsideWeChatOpenID{},
 	}
 
 }

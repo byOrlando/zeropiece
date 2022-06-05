@@ -24,10 +24,15 @@ func InitRouters() (Router *gin.Engine) {
 	})
 	Router.GET("/ws", wsocket.WsHandler)
 
+	// api group, use middleware Logger to log the ip and time of access
 	ApiV1Group := Router.Group("/api")
 	routers.InitBaseRouter(ApiV1Group)
 	routers.InitAccountRouter(ApiV1Group)
 	routers.InitDouYinRouter(ApiV1Group)
+	routers.InitWechat(ApiV1Group)
+	// WeChat group, use middleware Logger to log the ip and time of access
+	WechatRobotGroup := Router.Group("/NewChat")
+	routers.InitWechatRobot(WechatRobotGroup)
 	common.LOG.Info("routers register success")
 
 	return

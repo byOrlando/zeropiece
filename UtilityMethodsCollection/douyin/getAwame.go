@@ -89,12 +89,7 @@ func saveAllNewData(works []dao.DouyinWorks) {
 func pushNewWorksToIphone(works []dao.DouyinWorks) {
 	for _, v := range works {
 		if v.CommCount < 15 {
-			var option push.PushOption
-			option.Init()
-			option.Text = v.Title
-			option.AwameID = v.WorkID
-			option.Title = v.Name
-			option.Push()
+			push.DouYinPush(v.WorkID, v.Title, v.Name)
 			WSSuccess("发现新作品", nil)
 		}
 	}

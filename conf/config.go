@@ -6,14 +6,16 @@ const (
 )
 
 type Config struct {
-	Log      Log      `mapstructure:"log" json:"log" yaml:"log"`
-	Mysql    Mysql    `mapstructure:"mysql" json:"mysql" yaml:"mysql"`
-	System   System   `mapstructure:"system" json:"system" yaml:"system"`
-	Jwt      JWT      `mapstructure:"jwt" json:"jwt" yaml:"jwt"`
-	Redis    Redis    `mapstructure:"redis" json:"redis" yaml:"redis"`
-	Push     Push     `mapstructure:"push" json:"push" yaml:"push"`
-	Project  Project  `mapstructure:"project" json:"project" yaml:"project"`
-	BaiduMap BaiduMap `mapstructure:"baidumap" json:"baidumap" yaml:"baidumap"`
+	Log      Log          `mapstructure:"log" json:"log" yaml:"log"`
+	Mysql    Mysql        `mapstructure:"mysql" json:"mysql" yaml:"mysql"`
+	System   System       `mapstructure:"system" json:"system" yaml:"system"`
+	Jwt      JWT          `mapstructure:"jwt" json:"jwt" yaml:"jwt"`
+	Redis    Redis        `mapstructure:"redis" json:"redis" yaml:"redis"`
+	Push     Push         `mapstructure:"push" json:"push" yaml:"push"`
+	Project  Project      `mapstructure:"project" json:"project" yaml:"project"`
+	BaiduMap BaiduMap     `mapstructure:"baidumap" json:"baidumap" yaml:"baidumap"`
+	BoKa     BoKaConfig   `yaml:"boka" mapstructure:"boka" json:"boka"`
+	Wechat   WechatConfig `yaml:"wechat" mapstructure:"wechat" json:"wechat"`
 }
 
 type Project struct {
@@ -68,4 +70,20 @@ type JWT struct {
 type BaiduMap struct {
 	IpLocationUrl string `mapstructure:"ip_location_url" json:"ip_location_url" yaml:"ip_location_url"`
 	AK            string `mapstructure:"ak" json:"ak" yaml:"ak"`
+}
+
+type BoKaConfig struct {
+	Url      string `yaml:"url" mapstructure:"url" json:"url"`
+	CustId   string `json:"custId" yaml:"custId" mapstructure:"custId" `
+	CompId   string `json:"compId" yaml:"compId" mapstructure:"compId" `
+	UserName string `json:"userName" yaml:"userName" mapstructure:"userName" `
+	PassWord string `json:"passWord" yaml:"passWord" mapstructure:"passWord" `
+	Source   string `json:"source" yaml:"source" mapstructure:"source" `
+}
+
+type WechatConfig struct {
+	AppID     string `yaml:"appId" mapstructure:"appId" json:"appId"`
+	AppSecret string `yaml:"appSecret" mapstructure:"appSecret" json:"appSecret"`
+	Token     string `yaml:"token" mapstructure:"token" json:"token"`
+	AesKey    string `yaml:"aesKey" mapstructure:"aesKey" json:"aesKey"`
 }
